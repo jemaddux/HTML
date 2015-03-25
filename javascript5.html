@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>JavaScript Page 5</title>
+  <meta charset="utf-8">
+  <meta name="author" content="John Maddux">
+  <meta name="keywords" content="John Maddux, resume, website, homepage">
+  <meta name="description" content="A website showing off my design skills.">
+  <link rel="icon" type="image/ico" href="images/JE16px.jpg">
+  <style>
+   div.goback{
+    margin: auto;
+    width: 300px;
+    text-align: center;	
+  }
+  ul{
+    list-style: none;
+  }
+  li{
+    display: inline;
+  }
+  img{
+    border: thin solid black;
+	padding: 5px;
+	background-color: black;
+  }
+  body{
+    background-color: white;
+  }
+  div#content{
+    background-color: lightblue;
+	width: 964px;
+	margin: auto;
+	padding: 10px;
+	border-radius: 15px;
+  }
+  h1{
+    text-align: center;
+  }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="goback">
+  <h3><a href="index.html">Go back Home</a></h3>
+</div>
+<div id="content">
+  <h1>JavaScript Page 5</h1>
+  <ul>
+    <li><img src="images/bunny.jpg" id="slideshow"></li>
+	<li><img src="images/cat.jpg" id="slideshow"></li>
+	<li><img src="images/dog.jpg" id="slideshow"></li>
+	<li><img src="images/goose.jpg" id="slideshow"></li>
+	<li><img src="images/platypus.jpg" id="slideshow"></li>
+  </ul>
+  <script type="text/javascript">
+    $('img').width(250).height(250);
+	$('body').hide().fadeIn(2500);
+  </script>
+  <p>Blah Blah Blah</p>
+</div>
+</body>
+</html>

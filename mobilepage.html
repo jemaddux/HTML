@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Mobile Page Formating</title>
+  <meta charset="utf-8">
+  <meta name="author" content="John Maddux">
+  <meta name="keywords" content="iphone, mobile devices, css, html5, android">
+  <meta name="description" content="How mobile pages change based on the display device.">
+  <link rel="icon" type="image/icon" href="images/JE16px.jpg">
+  
+  <!This is one way to to small style sheets>
+  <link rel="stylesheet" href="standard_styles">
+  <link rel="stylesheet" media="(max-width: 480px)" href="small_styles.css">
+  
+  <!And this is the other>  
+  <style>
+    article{
+	  width: 964px;
+	}
+	@media (max-width: 768px) {
+	  ipad!!!!;
+	}
+    @media (max-width: 480px) {
+	  article {
+	    float: none;
+		width: auto;
+	  }
+	}
+  </style>
+</head>
+<body>
+  <h1>A mobile friendly page</h1>
+  <p>Full of video goodness!<p>  
+  <h2>Here is a video optimized for full web, ipad and iphone:</h2>
+    <video controls width="400" height="300">
+	  <source src="video/got.iphone.mp4" type="video/mp4" media="(max-device-width: 480px)">
+	  <source src="video/got.ipad.mp4" type="video/mp4" media="(max-device-width: 7680px)">
+	  <source src="video/got.mp4" type="video/mp4">
+	  <source src="video/got.ogv" type="video/ogg">
+</body>
+</html>

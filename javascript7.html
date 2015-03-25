@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>JavaScript Page 7</title>
+  <meta charset="utf-8">
+  <meta name="author" content="John Maddux">
+  <meta name="keywords" content="John Maddux, resume, website, homepage">
+  <meta name="description" content="A website showing off my design skills.">
+  <link rel="icon" type="image/ico" href="images/JE16px.jpg">
+  <style>
+   div.goback{
+    margin: auto;
+    width: 300px;
+    text-align: center;	
+  }
+  body{
+    background-color: white;
+  }
+  div#content{
+    background-color: lightblue;
+	width: 964px;
+	margin: auto;
+	padding: 10px;
+	border-radius: 15px;
+  }
+  h1{
+    text-align: center;
+  }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="goback">
+  <h3><a href="index.html">Go back Home</a></h3>
+</div>
+<div id="content">
+  <h1>JavaScript Page 7</h1>
+  <a href="http://www.google.com">Google</a><br>
+  <a href="http://www.amazon.com">Amazon</a><br>
+  <a href="http://www.wikipedia.com">Wikipedia</a><br>
+  <a href="http://www.facebook.com">Facebook</a><br>
+  <div id="bibliography">
+    <h3>Links on this page</h3>
+	<ul id="bibList">
+	</ul>
+  </div>
+  <h2>Adding Stuff Here</h2><br>
+  <script type="text/javascript">
+    $('a').each(function() {
+	  var extLink = $(this).attr('href');
+	  $('#bibList').append('<li>' + extLink + '</li>');
+	});
+	function addStuff(){
+	  $('h2').append('...&shy;');
+	};
+	$('a').mouseover(addStuff);
+  </script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

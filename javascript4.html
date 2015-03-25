@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>JavaScript Page 4</title>
+  <meta charset="utf-8">
+  <meta name="author" content="John Maddux">
+  <meta name="keywords" content="John Maddux, resume, website, homepage">
+  <meta name="description" content="A website showing off my design skills.">
+  <link rel="icon" type="image/ico" href="images/JE16px.jpg">
+  <style>
+   div.goback{
+    margin: auto;
+    width: 300px;
+    text-align: center;	
+  }
+  body{
+    background-color: white;
+  }
+  div#content{
+    background-color: lightblue;
+	width: 964px;
+	margin: auto;
+	padding: 10px;
+	border-radius: 15px;
+  }
+  h1{
+    text-align: center;
+  }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="goback">
+  <h3><a href="index.html">Go back Home</a></h3>
+</div>
+<div id="content">
+  <h1>JavaScript Page 4</h1>
+  <script type="text/javascript">
+    var x = 1, y = 0, selectNum = 50;
+	//selectNum = prompt('Enter a number...','');
+	while (x <= (selectNum - 1)){
+	  document.write(x + " + ");
+	  y += x;
+	  x++;
+	}
+	document.write(x + " = " + (y+x));
+							document.write("<br><br>");
+	for (var num = 1; num <= 5; num++) {
+	  document.write(num + ". Heather is cute.<br>");
+	}
+							document.write("<br><br>");
+	do {
+	  document.write(num + "...");
+	  num++;
+	} while(num <= 10);
+							document.write("<br><br>");
+	function printDate() {
+	  var today = new Date();
+	  document.write(today.toDateString());
+	}
+	printDate();
+							document.write("<br><br>");
+	function print(message) {
+	  document.write(message);
+	}
+	print("Hello, world!");
+							document.write("<br><br>");
+	function article(title, byline, main){
+	  print("<h2>" + title + "</h2>");
+	  print("<p>" + main + "</p>");
+	  print("<h5>" + byline + "</h5>");
+	  return 12;
+	}
+	article("Brave Dolphins", "by John Maddux",
+			"Flipper was the bravest dolphin in the sea. He drove motorcycles through flaming hoops and boxed tigers with his bare hands. Once he fought the white walkers armed only with a knitting needle which he had bravely stolen from a crippled grandmother. He is also a deadbeat dad. The end.");
+	</script>
+</div>
+</body>
+</html>

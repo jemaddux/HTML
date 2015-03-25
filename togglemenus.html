@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Toggle Menus</title>
+  <meta charset="utf-8">
+  <meta name="author" content="John Maddux">
+  <meta name="keywords" content="John Maddux, resume, website, homepage">
+  <meta name="description" content="A website showing off my design skills.">
+  <link rel="icon" type="image/ico" href="images/JE16px.jpg">
+  <style>
+   div.goback{
+    margin: auto;
+    width: 300px;
+    text-align: center;	
+  }
+  body{
+    background-color: white;
+	-webkit-transition: all 5.5s;
+	-moz-transition: all 5.5s;
+	-o-transition: all 5.5s;
+  }
+  div#content{
+    background-color: lightblue;
+	width: 964px;
+	margin: auto;
+	padding: 10px;
+	border-radius: 15px;
+  }
+  h1{
+    text-align: center;
+  }
+  .menubar{
+    width: 150px;
+	border-radius: 12px;
+	border: 5px black solid;
+	float: left;
+	margin-right: 10px;
+	margin-botom: 10px;
+  }
+  .mouseClick{
+    background-color: lightgreen;
+    width: 750px;
+	padding: 10px;
+	border-radius: 12px;
+	border: 5px black solid;
+	float: right;
+	margin-right: 10px;
+	margin-botom: 10px;
+  }
+  h5{
+    background-color: lightgreen;
+	font-size: 110%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+  }
+  h6{
+    background-color: #5ABB51;
+	font-size: 105%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+  }
+  .faqBox{
+    background-color: lightgreen;
+    width: 750px;
+	padding: 10px;
+	border-radius: 12px;
+	border: 5px black solid;
+	float: right;
+	margin-right: 10px;
+	margin-botom: 10px;
+  }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="goback">
+  <h3><a href="index.html">Go back Home</a></h3>
+</div>
+<div id="content">
+  <h1>JavaScript Effects</h1>
+  
+  <div class="menubar"><!----- The Menu.---->
+    <h5 class='menu1'>fadeOut In</h5>
+	  <div class='submenu1'>
+		<h6 class="mouse">Mouse Click</h6>
+		<h6 class="faq">FAQs</h6>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+	  </div>
+	<h5 class='menu2'>slideUp Down</h5>
+	  <div class='submenu2'>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+	  </div>
+	<h5 class="menu3">More JavaScript</h5>
+	  <div class='submenu3'>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+	  </div>
+	<h5 class="menu4">More JavaScript</h5>
+	  <div class='submenu4'>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+		<h6 class="">Empty</h6>
+	  </div>
+  </div>
+  
+  <script type="text/javascript"><!--//The menu open and close script.----->
+	$('.menu1').toggle(
+	  function() { $('.submenu1').fadeOut(3000);},// end first click  
+	  function() { $('.submenu1').fadeIn(3000);}// end second click
+	);//end toggle
+	$('.menu2').toggle(
+	  function() { $('.submenu2').slideUp(400);},// end first click  
+	  function() { $('.submenu2').slideDown(400);}// end second click
+	);//end toggle
+	$('.menu3').toggle(
+	  function() { $('.submenu3').hide();},// end first click  
+	  function() { $('.submenu3').show();}// end second click
+	);//end toggle
+	$('.menu4').toggle(
+	  function() { $('.submenu4').hide();},// end first click  
+	  function() { $('.submenu4').show();}// end second click
+	);//end toggle	
+	$('.mouse').toggle(
+	  function() { $('.mouseClick').show();},// end first click  
+	  function() { $('.mouseClick').hide();}// end second click
+	);//end toggle	
+	$('.faq').toggle(
+	  function() { $('.faqBox').show();},// end first click  
+	  function() { $('.faqBox').hide();}// end second click
+	);//end toggle	
+	</script>
+  
+  <div class="mouseClick">
+  <H2>Where you have clicked the moused: <span class="clicked"></span></h2>
+  
+  <script type="text/javascript">
+    $(document).click(function(evt) {
+	  var xPos = evt.pageX;
+	  var yPos = evt.pageY;
+	  $('.clicked').html("xPosition: " + xPos + " yPostion: " + yPos);
+	});
+  </script>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br>
+  </div>
+  
+  <div class="faqBox">
+    <H2>Frequently Asked Questions</h2>
+	
+  
+  </div>
+  
+  <span class='message'>Test Message</span>
+  
+  <script><!--- animate message--->
+    $('.message').animate(
+	  { left: '650px',
+	    opacity: .5,
+		fontSize: '24px'
+	  },
+	  1500
+	  );
+  </script>
+  
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<br><br><br><br><br><br>
+  <script type="text/javascript"><!----Hide all Boxs---->
+    $('.mouseClick').hide();
+	$('.faqBox').hide();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

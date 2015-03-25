@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Css Styling</title>
+  <meta charset="utf-8">
+  <style>
+    div.goback{
+	  margin: auto;
+	  width: 300px;
+	  text-align: center;	
+	}
+	div.content{
+	  width: 70%;
+	  border: thin black solid;
+	  margin: auto;
+	  padding: 20px;
+	  border-radius: 15px;
+	}
+	.backblue{
+	  background-color: blue; 
+	  color: white;
+	}
+	.backyellow{
+	  background-color: yellow;
+	}
+	.backred{
+	  background-color: red;
+	}
+	.pink{
+	  color: pink;
+	}
+	.orange{
+	  color: orange;
+	}
+	.grey{
+	  color: grey;
+	}
+	h1{
+	  text-align: center;
+	}
+	.crazybox{
+	  background-color: lightblue;
+	  border: solid 1px black;	
+	  width: 300px;
+	  padding: 25px;
+	  height: 100px;
+	  border-top-left-radius: 150px 30px;
+	  border-top-right-radius: 100px 50px;
+	  border-bottom-left-radius: 40px 90px;
+	  border-bottom-right-radius: 20px 75px;
+	  box-shadow: 5px 5px 10px blue;
+	}
+	.slickButton{
+	  color: white;
+	  font-weight: bold;
+	  padding: 10px;
+	  border: solid 1px black;
+	  background: blue;
+	  cursor: pointer;
+	  border-radius: 5px;
+	  
+	  -webkit-transition: all 3.5s;
+	  -moz-transition: all 3.5s;
+	  -o-transition: all 3.5s;
+	}
+	.slickButton:hover{
+	  height: 45px;
+	  width: 700px;
+	  color: black;
+	  background: green;
+	}
+	.menutop{
+	  display: inline;
+	}
+	.menuitem{
+	  display: inline;
+	  border: solid 1px black;
+	  margin: 0px;
+	  height: 50px;
+	  width: 1200px;
+	  background-color: black;
+	  color: white;
+	  float: none;
+	  
+	  -webkit-transition: all 0.5s;
+	  -moz-transition: all 0.5s;
+	  -o-transition: all 0.5s;
+	}
+	.menuitem:hover{
+	  background-color: blue;
+	}
+	.gallery{
+	  margin: 0px 30px 0px 30px;
+	  background: #D8EEFE;
+	  padding: 10px;
+	}
+	.gallery img{
+	  margin: 5px;
+	  padding: 5px;
+	  width: 200px;
+	  border: solid 1px black;
+	  background: white;
+	  
+	  -webkit-transition: all 1s;
+	  -moz-transition: all 1s;
+	  -o-transition: all 1s;
+	}
+	.gallery img:hover{
+	  -webkit-transform: scale(2.2) rotate(10deg);
+	  -moz-transform: scale(2.2) rotate(10deg);
+	  -o-transform: scale(2.2) rotate(10deg);
+	  background-color: black;
+	}
+  </style>
+</head>
+<body>
+<div class="goback">
+  <h3><a href="index.html">Go back Home</a></h3>
+</div>
+<div class="content">
+  <h1>How CSS3 can style your website pages</h1>
+  <h2>Intro</h2>
+  <p>CSS3 is the lastest generation <em>Cascading Style Sheet</em> and what it does is to provide the consistent look that you want to your webpages across various browsers. It can do many things from creating the border you see around this whole section to changing how your text and pictures look. This text you are reading right now is in the "content" section and using CSS3 I have styled it to give it that cool border with the rounded edges and to auto align it in the center of the page. It even changes size with the size of your browser window. Go ahead and resize your browser window to see how this section will continue to stay at 70% the size of the window. This allows this page to work not only in full size browsers but on mobile devices too.</p>
+  <h2>Formatting Text</h2>
+  <p>As you can see you can add <em>empahsis</em> to text or make it <strong>bolder</strong>. I can <span class="pink">change the</span> <span class="orange">color of the text</span> <strong>or</strong> <span class="backblue">change the</span> <span class="backyellow">background</span> <span class="backred">colors.</span>
+  </p>
+  <h1>You can also give it different sizes</h1>
+  <h2>You can also give it different sizes</h2>
+  <h3>You can also give it different sizes</h3>
+  <h4>You can also give it different sizes</h4>
+  <h5>You can also give it different sizes</h5>
+  <h6>You can also give it different sizes</h6>
+  <br>
+  <h2>You can position pictures too. </h2>
+  <p>This way you can have a raptor on the left and on the right</p>
+  <p><em class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis leo vel 
+     ligula <img style="width: 150px; float: left; margin: 10px; border-radius: 8px;" src="images/raptor.jpg"> ullamcorper vestibulum. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis hendrerit mauris lectus. Maecenas ut nisi eget ligula vulputate egestas at vel dolor. Duis sit amet nunc vel mauris dignissim malesuada posuere nec nunc. Etiam vel magna sed lorem posuere interdum. Morbi non metus diam. Nulla lectus libero, tincidunt in rhoncus <img style="width: 150px; float: right; margin: 10px; border-radius: 8px;" src="images/raptor2.jpg">quis, vehicula in magna. Nam eget elementum felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</em></p>
+    <p>
+     <em class="grey">In pellentesque adipiscing nunc eget feugiat. Nunc rutrum quam in lorem adipiscing blandit. Nunc eu erat felis. Nam ac leo sit amet sapien egestas mattis. Aliquam augue nisl, vestibulum ut facilisis eu, ornare eu justo. Aliquam quis nibh erat. Aenean nulla sem, sodales quis tincidunt quis, hendrerit ac urna. Donec ut leo lacus, vitae elementum leo. Etiam ipsum lacus, pretium eu porttitor nec, tempor a augue. Maecenas sit amet elit arcu. Nunc vitae dignissim est. Proin quis leo nisi. Nullam tempor pulvinar tincidunt. Sed suscipit commodo nisl egestas tincidunt. Mauris a tristique orci. Nunc sit amet malesuada quam.</em>
+  </p>
+  <p>These are just some of the ways that you can use CSS to style a page so that it looks great.
+  <br><br>
+  <div class="crazybox">Here is a crazy shaped box.</div>
+  
+  <br><br>
+  <button class="slickButton">Hover Here!</button>
+  
+  <br><br>
+  <ul class="menutop">
+    <li class="menuitem">Super</li>
+    <li class="menuitem">Cool</li>
+    <li class="menuitem">Menu</li>
+  </ul>
+  <br><br><br>
+  
+  <div class="gallery">
+    <img src="images/bunny.jpg">
+	<img src="images/cat.jpg">
+	<img src="images/dog.jpg">
+	<img src="images/platypus.jpg">
+	<img src="images/goose.jpg">
+  </div>
+  
+  <br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>

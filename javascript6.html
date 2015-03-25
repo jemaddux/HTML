@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>JavaScript Page 6</title>
+  <meta charset="utf-8">
+  <meta name="author" content="John Maddux">
+  <meta name="keywords" content="John Maddux, resume, website, homepage">
+  <meta name="description" content="A website showing off my design skills.">
+  <link rel="icon" type="image/ico" href="images/JE16px.jpg">
+  <style>
+  div.goback{
+    margin: auto;
+    width: 300px;
+    text-align: center;	
+  }
+  body{
+    background-color: white;
+  }
+  .content{
+    background-color: lightblue;
+	width: 964px;
+	margin: auto;
+	padding: 10px;
+	border-radius: 15px;
+  }
+  h1{
+    text-align: center;
+  }
+  .pink{
+    background-color: pink;
+  }
+  .alt{
+    background-color: lightgreen;
+	width: 964px;
+	margin: auto;
+	padding: 10px;
+	border-radius: 15px;
+  }
+  img:hover{
+      -webkit-transform: scale(1.2) rotate(-10deg);
+	  -moz-transform: scale(1.2) rotate(-10deg);
+	  -o-transform: scale(1.2) rotate(-10deg);
+	  background-color: black;
+	  -webkit-transition: all 1s;
+	  -moz-transition: all 1s;
+	  -o-transition: all 1s;
+  }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="goback">
+  <h3><a href="index.html">Go back Home</a></h3>
+</div>
+<div class="content">
+  <h1>JavaScript Page 6</h1>
+  <div id="container">
+    <div id="errors">
+	  <h2>Errors</h2>
+	</div>
+	<div id="test2">
+	  <h2>Text Here</h2>
+	</div><br>
+	<div id="append">
+	  <br>Append This
+	</div>
+  </div>
+  <ul>
+    <li class='one'>Item One</li>
+	<li class='two'>Item Two</li>
+    <li class='three'>Item Three</li>
+  </ul>
+  <button id='changeStyle'>Click Me</button>
+  <script type="text/javascript">
+    $('#changeStyle').click(function(){
+	  $('.content').toggleClass('alt');
+	});
+	$('body').css("font-size", "105%");
+    $('li').addClass('pink');
+	$('.one').removeClass('pink');
+    $('#errors').html('<p>There are four errors in this form.</p>');
+	$('#test2').text('<h2>Put something here.</h2>');
+	$('#append').append(" .......Add me in");
+	$('#append').prepend("I'm here too.... ");
+	$('#append').before("<span class='error'>Error Message</span>");
+	$('span.error').remove();
+  </script>
+  <span class='removeMe'></span>
+  <br>
+  
+  <script type="text/javascript">
+    $('.removeMe').html("<p>New stuff</p><img class='hoverPic' src='images/dog.jpg' width='400px' style='border: 10px solid black; border-radius: 8px;'>");
+	$('img').fadeOut();
+	$('img').fadeIn();
+  </script>
+  
+  
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

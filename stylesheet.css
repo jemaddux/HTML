@@ -1,0 +1,167 @@
+body{
+  background-color: white;
+  font-family: sans-serif;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+@font-face{
+  font-family: futurama;
+  src: url('fonts/futurama1.ttf');
+}
+div#content{
+  width: 964px;
+  margin: auto;
+}
+div.image {
+  position: relative;
+}
+div.text {
+  position: absolute;
+  top: 150px;
+  left: 1px;
+  width: 220px; 
+  color: white;
+  background-color: black;
+}
+h1{
+  font-size: 170%;
+  padding-top: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  margin: 5px;
+}
+div.text1{
+  position: absolute;
+  top: 240px;
+  left: 454px;
+  width: 90px;
+  color: white;
+  background-color: black;
+}
+div.text2{
+  position: absolute;
+  top: 240px;
+  left: 574px;
+  width: 110px;
+  color: white;
+  background-color: black;
+}
+div.text3{
+  position: absolute;
+  top: 240px;
+  left: 714px;
+  width: 100px;
+  color: white;
+  background-color: black;
+}
+div.text4{
+  position: absolute;
+  top: 240px;
+  left: 839px;
+  width: 125px;
+  color: white;
+  background-color: black;
+}
+h2{
+  font-size: 130%;
+  padding: 0px;
+  margin: 5px;
+  color: white;
+}
+h3{
+  font-size: 150%;
+  margin: 0px;
+}
+a:link{
+  font-size: 100%;
+  font-style: normal;
+  color: black;
+}
+a.nav {
+  color: white;
+  text-decoration: none
+}
+a.nav:visited{
+  color: white;
+  text-decoration: none
+}
+a.nav:active{
+  color: white;
+  text-decoration: none
+}
+a.nav:hover{
+  color: orange;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+a:active{
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+  color: orange;
+}
+header{
+  width: 964px;
+}
+div#main{
+  width: 964px;
+  length: 1000px;
+  background-color: white;
+  padding: 15px;
+}
+footer{
+  width: 933px;
+  border-left: 1px solid white;
+  background-color: #75BE01;
+  padding: 15px;
+}
+tr{
+  background-color: lightgrey;
+}
+div#resume {
+  position: absolute;
+  top: 305px;
+  left: 780px;
+  width: 350px;
+  height: 805px;
+  border: 1px solid black;
+  background-color: lightgrey;
+  padding: 12px;
+  font-family: arial;
+}
+h4{
+  margin: 0px;
+  text-decoration: underline;
+}
+p{
+  margin: 0px;
+}
+h5{
+  margin: 0px;
+  text-decoration: underline;
+}
+div#leftside{
+  width: 550px;
+}
+aside{
+  float: right;
+  max-width: 300px;
+  border-top: thin black solid;
+  border-bottom: thin black solid;
+  font-size:  130%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  line-height: 130%;
+}
+article,aside, figure, figcaption, footer, header, hgroup, nav, section, summary{
+  display: block;
+}

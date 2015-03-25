@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Text Fade In</title>
+  <meta charset="utf-8">
+  <meta name="author" content="John Maddux">
+  <meta name="keywords" content="John Maddux, resume, website, homepage">
+  <meta name="description" content="A website showing off my design skills.">
+  <link rel="icon" type="image/ico" href="images/JE16px.jpg">
+  <style>
+   div.goback{
+    margin: auto;
+    width: 300px;
+    text-align: center;	
+  }
+  body{
+    background-color: white;
+  }
+  div#content{
+    background-color: lightblue;
+	width: 964px;
+	margin: auto;
+	padding: 10px;
+	border-radius: 15px;
+  }
+  h1{
+    text-align: center;
+  }
+  line1{}
+  line2{}
+  line3{}
+  line4{}
+  line5{}
+  </style>
+  <script src="../_js/jquery-1.6.3.min.js"></script>
+</head>
+<body>
+<div class="goback">
+  <h3><a href="index.html">Go back Home</a></h3>
+</div>
+<div id="content">
+  <h1>Text Fade In</h1>
+  <script> 
+    $(document).ready(function(){ $('p').hide().fadeIn(3000); });
+	$(document).ready(function(){ $('line2').hide().fadeIn(6000); });
+	$(document).ready(function(){ $('line3').hide().fadeIn(9000); });
+	$(document).ready(function(){ $('line4').hide().fadeIn(12000); });
+	$(document).ready(function(){ $('line5').hide().fadeIn(15000); });
+  </script>
+  <p id="line1">Line 1</p>
+  <p id="line2">Line 2</p>
+  <p class="line3">Line 3</p>
+  <p class="line4">Line 4</p>
+  <p class="line5">Line 5</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>JavaScript Testing Page</title>
+  <meta charset="utf-8">
+  <meta name="author" content="John Maddux">
+  <meta name="keywords" content="John Maddux, resume, website, homepage">
+  <meta name="description" content="A website showing off my design skills.">
+  <link rel="icon" type="image/ico" href="images/JE16px.jpg">
+  <style>
+   div.goback{
+    margin: auto;
+    width: 300px;
+    text-align: center;	
+  }
+  body{
+    background-color: white;
+  }
+  div#content{
+    background-color: lightblue;
+	width: 964px;
+	margin: auto;
+	padding: 10px;
+	border-radius: 15px;
+  }
+  h1{
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+<div class="goback">
+  <h3><a href="index.html">Go back Home</a></h3>
+</div>
+<div id="content">
+  <h1>JavaScript Testing Page</h1>
+  <script type="text/javascript">
+    var name = prompt("Pick a number 0-6", '');
+    
+  </script>
+  
+  <script type="text/javascript">
+    var firstName = 'John', lastName = 'Maddux';
+	var fullName = firstName + " " + lastName;
+	var numOfShoes = '2', numOfSocks = '4';
+	var totalNum = Number(numOfShoes) + +numOfSocks;
+	var score = 0;
+	score = score + 100;
+	score += 10;
+	score -= 7;
+	score *= 4;
+	score /= 2;
+	score++;
+	score--;
+	var fullName2 = firstName;
+	fullName2 += ' ' + lastName;
+	var daysArray = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+	var array2 = [1,34,score,"red"];
+	var varLineBreak = "<br>";
+	daysArray.push('funDay');  // puts in the last item>
+	daysArray.unshift('firstDay'); // puts in the first item>
+	daysArray.pop(); // takes out the last item>
+	daysArray.shift(); // takes out the first item>
+	
+	var varX = fullName + " " + totalNum + " " + score + " " + fullName2 + ' ' + name;
+	document.write(varX);
+	  document.write(varLineBreak);
+	document.write(daysArray[name]);
+	  document.write(varLineBreak);
+	document.write(array2);	
+	  document.write(varLineBreak);
+	document.write(daysArray[daysArray.length-1]);
+  </script>
+  <br>
+  <br>
+  
+</div>
+</body>
+</html>

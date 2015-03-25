@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>JavaScript Page 2</title>
+  <meta charset="utf-8">
+  <meta name="author" content="John Maddux">
+  <meta name="keywords" content="John Maddux, resume, website, homepage">
+  <meta name="description" content="A website showing off my design skills.">
+  <link rel="icon" type="image/ico" href="images/JE16px.jpg">
+  <style>
+   div.goback{
+    margin: auto;
+    width: 300px;
+    text-align: center;	
+  }
+  body{
+    background-color: white;
+  }
+  div#content{
+    background-color: lightblue;
+	width: 964px;
+	margin: auto;
+	padding: 10px;
+	border-radius: 15px;
+  }
+  h1{
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+<div class="goback">
+  <h3><a href="index.html">Go back Home</a></h3>
+</div>
+<div id="content">
+  <h1>JavaScript Page 2</h1>
+  <script type="text/javascript">
+    var authors = ['Ernest Hemingway',
+	  'Charloote Bronte',
+	  "Dante Aligieri",
+	  "Emily Dickinson"	  
+	  ];
+	var numOne = '2';
+    document.write('<p>The first author is <strong>');
+	document.write(authors[0] + '.</strong></p>');
+	document.write('<p>The last author is <strong>' + authors[authors.length-1] + '.</strong></p>');
+    authors.unshift('Stan Lee');
+	document.write('<p>The new first author is <strong>' + authors[0] + '</strong></p>');
+	if (numOne == 1){
+	  document.body.style.backgroundColor = 'orange';
+	} else if (numOne == 2) {
+	  document.body.style.backgroundColor = 'green';
+	} else {
+	  document.body.style.backgroundColor = 'pink';
+	}
+  </script>
+  
+  <script>
+    var fridayCash = prompt('How much money can you spend?','');
+	if (fridayCash >= 50){
+	  document.write('<p>You should go out to a dinner and a movie.</p>');
+	} else if (fridayCash >= 35) {
+	  document.write('<p>You should go out to a fine meal.</p>');
+	} else if (fridayCash >= 12) {
+	  document.write('<p>You should go out to a movie.</p>');
+	} else {
+	  document.write('<p>Looks like you will be watching TV.</p>');
+	}
+  </script>
+</div>
+</body>
+</html>

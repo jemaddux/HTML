@@ -1,0 +1,114 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Forms Example Page</title>
+<meta charset="utf-8">
+<style>
+  div.goback{
+    margin: auto;
+    width: 300px;
+    text-align: center;	
+  }
+  body{
+    background-color: white;
+  }
+  div#content{
+    background-color: lightblue;
+	width: 964px;
+	margin: auto;
+	padding: 10px;
+  }
+  header{
+    text-align: center;
+  }
+  div#thinline{
+    border: thin black solid;
+	width: 100%;
+  }
+  input:focus{
+    background: #eaeaea;
+  }
+  label{
+	margin-right: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+  }
+  label.contact{
+    float: left;
+    width: 70px;
+  }
+  input{
+    margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 7px;
+	padding: 3px;
+  }
+  select{
+    margin-top: 6px;
+	width: 150px;
+	padding: 3px;
+	border-radius: 7px;
+  }
+  span{
+    float: left;
+    width: 140px;
+	margin-left: 10px;
+	margin-right: 10px;
+  }
+</style>
+
+</head>
+<body>
+<div class="goback">
+  <h3><a href="index.html">Go back Home</a></h3>
+</div>
+<div id="content">
+  <header>
+  <h1>Example Forms Page</h1>
+  <p>Here are some example forms. This first one, the Zoo Keeper Application Form, uses JavaScript to submit the form to a webserver.</p>
+  </header>
+  
+  <div id="thinline"></div>
+  
+  <form id="zooKeeperForm" action="processApplication.cgoi">
+    <h2>Zoo Keeper Application Form</h2>
+    <p><i>Please complete the form. Mandatory fields are marked with a </i><em>*</em>.</p>
+    <fieldset>
+	  <legend>Contact Details</legend>
+	    <label class="contact" for="name">Name <em>*</em></label>
+		<input id="name" placeholder="Jane Smith" required autocomplete="off"><br>
+		<label class="contact" for="telephone">Telephone</label>
+		<input id="telephone" placeholder="(123) 456-7890" autocomplete="off"><br>
+		<label class="contact" for="email">Email <em>*</em></label>
+		<input id="email" placeholder="janesmith@email.com" required autocomplete="off"><br>
+    </fieldset>
+	<fieldset>
+	  <legend>Personal Information</legend>
+	    <label class="contact" for="age">Age<em>*</em></label>
+		<input id="age" requried autocomplete="off"><br>
+		<label class="contact" for="gender">Gender</label>
+		<select id="gender">
+		  <option value="female">Female</option>
+		  <option value="male">Male</option>
+		</select><br><br>
+		<label for="comments">When did you first know you wanted to be a zoo-keeper?</label><br>
+		<textarea id="comments" style="width: 95%; height: 200px;"  placeholder="What first fascinated me about animals was...." oninput="validateComments(this)" autocomplete="off"></textarea>
+	</fieldset>
+    <fieldset class="checkbox">
+	  <legend>Pick Your Favorie Animals</legend>
+	    <span><label for="zebra"><input id="zebra" type="checkbox"> Zebra</label></span>
+		<span><label for="cat"><input id="cat" type="checkbox"> Cat</label></span>
+	    <span><label for="anaconda"><input id="anaconda" type="checkbox"> Anaconda</label></span>
+	    <span><label for="human"><input id="human" type="checkbox"> Human</label><br></span>
+	    <span><label for="elephant"><input id="elephant" type="checkbox"> Elephant</label></span>
+	    <span><label for="wildebeest"><input id="wildebeest" type="checkbox"> Wildebeest</label></span>
+	    <span><label for="pigeon"><input id="pigeon" type="checkbox"> Pigeon</label></span>
+	    <span><label for="crab"><input id="crab" type="checkbox"> Crab</label></span>
+		<span><label for="dragon"><input id="dragon" type="checkbox"> Dragon</label></span>
+		<span><label for="lion"><input id="lion" type="checkbox"> Lion</label></span>
+	</fieldset>
+	<p><input type="submit" value="Submit Application"></p>
+  </form>
+</div>
+</body>
+</html>
